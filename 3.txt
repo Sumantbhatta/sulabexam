@@ -1,0 +1,145 @@
+Procedures for 3.txt: Install Google App Engine (Python)
+
+
+
+Step 1: Install Python 
+
+
+
+Download Python: Go to the Python official website and click "Download" for the latest version.
+
+
+
+Install Python: Run the installer.
+
+
+
+Important: Check the box that says "Add Python 3.x to PATH".
+
+Click "Install Now" and follow the instructions.
+
+
+
+Verify Python Installation: Open Command Prompt and type python --version.
+
+
+
+Step 2: Install Google Cloud SDK 
+
+(Google App Engine is part of the SDK) 
+
+
+
+Download Google Cloud SDK: Visit the Google Cloud SDK page and download the installer for Windows.
+
+
+
+Install Google Cloud SDK: Run the installer and follow the on-screen instructions.
+
+Initialize the SDK:
+
+Open Google Cloud SDK Shell (a shortcut should be on your desktop).
+
+Type gcloud init and press Enter.
+
+Follow the instructions to log in to your Google account.
+
+Step 3: Create a "Hello, World!" App in Python 
+
+
+
+Create a Project Directory: Create a new folder for your app.
+
+
+
+Open Command Prompt in the Directory: Navigate to the folder.
+
+Set Up a Virtual Environment (Optional):
+
+Run python -m venv env.
+
+Activate it by running env\Scripts\activate.
+
+Create the Application Files:
+
+Create a file named app.yaml  with this content:
+
+YAML
+
+
+
+[cite_start]runtime: python39 [cite: 145]
+
+[cite_start]handlers: [cite: 146]- [cite_start]url: /.* [cite: 147]
+
+  [cite_start]script: auto [cite: 148]
+
+Create another file named main.py  with this content:
+
+Python
+
+
+
+from flask import Flask [cite: 150]
+
+app = Flask(__name__) [cite: 151]
+
+
+
+@app.route('/') [cite: 152]def hello(): [cite: 153]
+
+    """Return a friendly HTTP greeting.""" [cite: 154]
+
+    return 'Hello, World!' [cite: 155]if __name__ == '__main__': [cite: 156]
+
+    app.run(host='127.0.0.1', port=8080, debug=True) [cite: 157]
+
+
+
+Install Flask: In your Command Prompt, run pip install Flask.
+
+Run the App Locally:
+
+Run python main.py.
+
+Open a web browser and go to http://localhost:8080. You should see "Hello, World!".
+
+
+
+Step 4: Deploy to Google App Engine 
+
+
+
+Navigate in Google Cloud SDK Shell: Use the cd command to navigate to your project directory.
+
+
+
+Deploy Your Application: Run gcloud app deploy. Follow the prompts.
+
+
+
+Open Your Application: After deployment, access your app via the URL provided by GAE.
+
+Tips for Layman
+
+
+
+
+
+Follow Instructions Carefully: Each step is crucial.
+
+
+
+Use Correct File Names: Use app.yaml and main.py exactly.
+
+
+
+Internet Connection: Required for downloading and deploying.
+
+
+
+Google Account Needed: You need a Google account.
+
+
+
+Billing Account: GAE has a free tier, but Google may require billing to be enabled.

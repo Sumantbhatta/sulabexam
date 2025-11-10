@@ -1,0 +1,103 @@
+Procedures for 2.txt: Install C Compiler in VM
+
+
+
+For a Linux VM (e.g., Ubuntu) 49
+
+
+
+Open Terminal: Open the Terminal application in your Linux VM50. (Shortcut: $Ctrl+Alt+T$)
+
+
+
+Update Package Lists: Type sudo apt update and press Enter51. Enter your password if prompted52.
+
+
+
+Install Build-Essential Package: This package includes the GCC (GNU C Compiler)53.
+
+Type sudo apt install build-essential and press Enter54.
+
+
+
+Verify Installation: Type gcc --version in the Terminal55. This should display the GCC version56.
+
+
+
+Write a Simple C Program: Use a text editor (like Gedit) to write your C program 57, for example, a "Hello, World!" program58.
+
+
+
+Save the Program: Save the file with a .c extension, for example, hello.c59.
+
+Compile the Program:
+
+Go back to the Terminal60.
+
+Navigate to the directory where you saved your file using the cd command61.
+
+Compile by typing gcc hello.c -o hello and press Enter62. This creates an executable file named hello63.
+
+Run the Program:
+
+Run by typing ./hello and press Enter64. You should see the program's output65.
+
+
+
+For a Windows VM 66
+
+
+
+Download a C Compiler: A popular choice is MinGW67. Download it from its website68.
+
+Install the Compiler:
+
+Run the downloaded installer69.
+
+Follow the on-screen instructions70.
+
+Set Environment Variable:
+
+You must add the MinGW bin folder to your system's PATH71.
+
+Open 'Control Panel' > 'System' > 'Advanced system settings' > 'Environment Variables'72.
+
+Under 'System variables', find 'Path', click 'Edit'73.
+
+Add the path (e.g., C:\MinGW\bin)74.
+
+Click 'OK' to close all dialogs75.
+
+Verify Installation:
+
+Open Command Prompt and type gcc --version76. This should display the GCC version77.
+
+Write and Compile a Simple C Program:
+
+Use a text editor (like Notepad) to write your C program78.
+
+Save the file with a .c extension, e.g., hello.c79.
+
+Open Command Prompt, navigate to your directory, and compile: gcc hello.c -o hello.exe80.
+
+Run the Program:
+
+Run by typing hello.exe in the Command Prompt81.
+
+Tips for Layman
+
+
+
+Take Your Time: Read and understand each step82.
+
+
+
+Be Careful with Commands: In Linux, commands are case-sensitive83.
+
+
+
+File Locations: Remember where you save your files84.
+
+
+
+Internet Connection: Needed for downloading software85.

@@ -1,0 +1,100 @@
+Procedures for 8.txt: Install Hadoop Single-Node Cluster
+
+Part 1: Installing Hadoop 
+
+Install Java Development Kit (JDK):
+
+Open a terminal and update packages: sudo apt-get update.
+
+
+Install the JDK: sudo apt-get install default-jdk.
+
+
+Verify Java Installation:
+
+Check the version: java -version.
+
+
+Download Hadoop:
+
+Go to the Apache Hadoop website and download the latest stable release.
+
+Extract Hadoop:
+
+Extract the file (e.g., to /usr/local/hadoop):
+
+
+sudo tar -zxvf hadoop-x.y.z.tar.gz -C /usr/local/hadoop.
+
+
+Configure Hadoop Environment:
+
+Open your .bashrc file: nano ~/.bashrc.
+
+
+Add these lines at the end:
+
+Bash
+
+export HADOOP_HOME=/usr/local/hadoop [cite: 364]
+export PATH=$PATH:$HADOOP_HOME/bin [cite: 365]
+Apply the changes: source ~/.bashrc.
+
+Configure Hadoop Settings:
+
+Navigate to the config directory: cd $HADOOP_HOME/etc/hadoop.
+
+
+Edit hadoop-env.sh to set JAVA_HOME:
+
+
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::") 
+
+Configure core-site.xml, hdfs-site.xml, mapred-site.xml, and yarn-site.xml as needed for your environment.
+
+Format the Hadoop Filesystem:
+
+Initialize the filesystem: hdfs namenode -format.
+
+
+Start Hadoop Services:
+
+Start NameNode and DataNode: start-dfs.sh.
+
+
+Start Resource and NodeManager: start-yarn.sh.
+
+
+
+Part 2: Running the WordCount Application 
+
+Create Input Directory in HDFS:
+
+
+hdfs dfs -mkdir /wordcount_input.
+
+
+Add Input Files:
+
+Put a local text file into HDFS:
+
+
+hdfs dfs -put localfile.txt /wordcount_input.
+
+
+Run WordCount:
+
+Navigate to Hadoop directory: cd $HADOOP_HOME.
+
+
+Run the example (replace x.y.z with your version):
+
+
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-x.y.z.jar wordcount /wordcount_input /wordcount_output
+
+Check the Output:
+
+View the WordCount result:
+
+
+hdfs dfs -cat /wordcount_output/part-r-00000. (Note: The file name in the manual  part-1-00000 may be a typo, part-r-00000 is more common).

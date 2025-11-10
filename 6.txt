@@ -1,0 +1,72 @@
+Procedures for 6.txt: Transfer Files Between VMs
+Prerequisites:
+
+Two operational VMs (VM1 and VM2).
+
+Basic familiarity with the VM operating systems.
+
+Network connectivity between both VMs.
+
+Steps:
+
+Establish Network Connectivity:
+
+Ensure both VMs are on the same network or can communicate online.
+
+Check the IP addresses of both VMs.
+
+Choose a File Transfer Method:
+
+Options include FTP, SCP, or shared drives.
+
+This guide uses SCP (Secure Copy Protocol).
+
+Install SCP Client:
+
+On Windows VMs, use an app like WinSCP.
+
+On Linux VMs, SCP is usually pre-installed.
+
+Preparing Files for Transfer:
+
+On VM1, locate the files you want to transfer.
+
+You can compress them into a zip file for easier transfer (optional).
+
+Using SCP for Transfer:
+
+Open the SCP client on VM1.
+
+Enter the IP address of VM2.
+
+Provide authentication (username/password).
+
+Browse and select the file(s) on VM1.
+
+Choose the target directory on VM2.
+
+Initiate the transfer.
+
+Verifying Transfer:
+
+Log into VM2.
+
+Check the target directory to ensure files are present.
+
+Verify file integrity (size, no corruption).
+
+Troubleshooting:
+
+If it fails, check network connectivity and credentials.
+
+Ensure enough storage space on VM2.
+
+Check firewall or security settings.
+
+Alternative Methods:
+
+For non-technical users, use a shared network drive or cloud storage.
+
+Upload from VM1 and download to VM2.
+
+

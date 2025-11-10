@@ -1,0 +1,57 @@
+Procedures for 7.txt: Launch VM using TryStack
+
+Introduction to TryStack: It's a free, online platform for experimenting with OpenStack cloud software.
+
+Account Creation and Login:
+
+Go to the TryStack website.
+
+Complete the account creation and verification process.
+
+Log in to your account.
+
+Navigating the TryStack Dashboard:
+
+Review the dashboard, noting key areas like project overview, compute resources, and network settings.
+
+Setting up a Project:
+
+Create a new project if needed.
+
+Accessing the Compute Service:
+
+Navigate to the Compute service in the dashboard.
+
+Creating a Virtual Machine:
+
+Click the "Launch Instance" button.
+
+Fill in details: Instance Name, Flavor (VM size), and Source (OS image).
+
+Select an OS image (e.g., Ubuntu, CentOS).
+
+Configure network settings (e.g., assign a floating IP).
+
+Set up security groups (firewall rules).
+
+Add a key pair for SSH access.
+
+Launching the Virtual Machine:
+
+Launch the VM after setting all configurations.
+
+Watch for status changes during launch.
+
+Accessing and Using the Virtual Machine:
+
+Access the running VM, typically via SSH.
+
+Monitoring and Managing the Virtual Machine:
+
+Monitor the VM's status.
+
+Learn how to resize, suspend, or terminate the VM.
+
+Troubleshooting Common Issues:
+
+Refer to this section for issues like connectivity problems or creation errors.

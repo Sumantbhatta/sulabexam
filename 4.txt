@@ -1,0 +1,46 @@
+Procedures for 4.txt: Use GAE Launcher (Google Cloud SDK)
+
+Using Google Cloud SDK to Launch 
+
+
+Install Google Cloud SDK: If not already installed, follow the steps from the previous guide.
+
+
+Open the Google Cloud SDK Shell: Find this in your Start menu or on your desktop.
+
+
+Navigate to Your Project Directory: Use the cd command (e.g., cd path\to\your\project).
+
+Run Your Application (Deploy):
+
+Use the gcloud app deploy command.
+
+This deploys your app to the App Engine server.
+
+It will prompt you for any needed information.
+
+
+View Your Running Application: Once deployed, the SDK provides a URL to view your app.
+
+
+Stop the Running Application: You can stop the app through the Google Cloud Platform Console.
+
+Tips for Layman
+
+
+Follow Each Step: Enter commands exactly as written.
+
+
+Google Account Required: You need a Google account.
+
+
+Internet Connection Needed: Required for deploying.
+
+
+Be Patient: Deployment can take a few minutes.
+
+
+Keep Your Project Organized: Keep all project files in one folder.
+
+
+Billing Considerations: Be aware of free tier limits and possible charges.

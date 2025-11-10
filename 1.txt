@@ -1,0 +1,122 @@
+Procedures for 1.txt: Install VirtualBox/VMware
+Procedure for VirtualBox
+
+
+Download VirtualBox 
+
+Visit the VirtualBox website.
+
+Click on 'Download VirtualBox'.
+
+Choose the version appropriate for your Windows (7, 8, or 10).
+
+
+Install VirtualBox 
+
+Run the downloaded installer.
+
+Follow the on-screen instructions. The default settings are usually fine.
+
+Download the OS ISO File
+
+For Linux: Visit the website of the Linux distribution you want (e.g., Ubuntu).
+
+For Windows: You'll need a Windows ISO file from the Microsoft website.
+
+
+Create a New Virtual Machine (VM) 
+
+Open VirtualBox.
+
+Click 'New'.
+
+Name your VM and select the OS type and version.
+
+Allocate RAM (at least 2GB recommended).
+
+Create a virtual hard disk (at least 20GB recommended).
+
+
+Configure the VM 
+
+Select the VM and click 'Settings'.
+
+Go to 'Storage' > 'Controller: SATA' > 'Empty'.
+
+Click the disk icon next to 'Optical Drive' and 'Choose a disk file'.
+
+Select the ISO file you downloaded.
+
+
+Install the OS 
+
+Select the VM and click 'Start'.
+
+Follow the on-screen instructions to install the OS.
+
+Once installed, you can start the VM from VirtualBox.
+
+
+Procedure for VMware Workstation Player 
+
+
+Download VMware Workstation Player 
+
+Visit the VMware website.
+
+Click on 'Download Now'.
+
+Choose the version for Windows.
+
+Install VMware Workstation Player
+
+Run the downloaded installer.
+
+Follow the on-screen instructions.
+
+Download the OS ISO File
+
+Same as in VirtualBox steps.
+
+
+Create a New Virtual Machine 
+
+Open VMware Workstation Player.
+
+Click 'Create a New Virtual Machine'.
+
+Select 'Installer disc image file (iso)' and choose your downloaded ISO file.
+
+Follow the wizard to set up the VM (name, disk size, etc.).
+
+
+Install the OS 
+
+VMware will start the OS installation after setup.
+
+Follow the on-screen instructions.
+
+
+Using the VM 
+
+After installation, you can start the VM from VMware Workstation Player.
+
+
+(Note: You only need to do one, either VMware or VirtualBox) 
+
+Tips for Layman
+
+
+Read Each Step Carefully: Don't rush.
+
+
+Default Settings Are Usually Fine: Stick with default settings if in doubt.
+
+
+Allocate Enough Resources: Ensure your physical machine has enough RAM, CPU, and storage.
+
+
+Internet Connection: Needed for downloading software and ISO files.
+
+
+Follow On-Screen Instructions: Just follow the on-screen instructions during the OS installation.
