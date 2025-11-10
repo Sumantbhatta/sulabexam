@@ -1,0 +1,64 @@
+4th lab program code :
+
+app.yaml
+runtime: python311
+handlers:
+  - url: /.*
+    script: auto
+
+
+main.py
+from flask import Flask, render_template, request
+app = Flask(_name_)
+@app.route('/')
+def index():
+    return render_template('index.html')
+@app.route('/calculate', methods=['POST'])
+def calculate():
+    num1 = float(request.form['num1'])
+    num2 = float(request.form['num2'])
+    operator = request.form['operator']
+
+    if operator == '+':
+        result = num1 + num2
+    elif operator == '-':
+        result = num1 - num2
+    elif operator == '*':
+        result = num1 * num2
+    elif operator == '/':
+        result = num1 / num2
+    else:
+        result = "Invalid Operation"
+
+    return render_template('index.html', result=result)
+
+if _name_ == '_main_':
+    app.run(host='127.0.0.1', port=8080, debug=True)
+
+
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Web Calculator</h1>
+
+    <form method="POST" action="/calculate">
+        <input type="number" step="any" name="num1" placeholder="Enter first number" required>
+        <select name="operator">
+            <option value="+"> + </option>
+            <option value="-"> - </option>
+            <option value="*"> * </option>
+            <option value="/"> / </option>
+        </select>
+        <input type="number" step="any" name="num2" placeholder="Enter second number" required>
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if result is defined %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>

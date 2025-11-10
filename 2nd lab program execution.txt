@@ -1,0 +1,32 @@
+Commands
+
+sudo apt update
+
+sudo apt install gcc
+
+sudo apt install build-essential
+
+cd ~/Desktop
+
+touch hello.c
+
+🔹 After running the above commands, a new file hello.c will be created on your Desktop.
+🔹 Open it using any editor (VS Code, nano, gedit, etc.) and write the below C code inside it.
+
+#include <stdio.h>
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+
+
+compile nd run - 
+
+gcc hello.c -o hello
+
+./hello
+
+output - 
+Hello, World!
+
+ 
