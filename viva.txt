@@ -1,0 +1,107 @@
+CLOUD COMPUTING VIVA NOTES
+
+1. What is Cloud Computing?
+Cloud computing refers to delivering computing services (servers, storage, networking, databases, software) over the internet on pay-per-use basis.
+Example: Google Drive stores files online instead of on your local computer.
+
+2. What is CloudSim?
+CloudSim is a simulation toolkit for modeling cloud environments and testing cloud algorithms before actual deployment.
+Example: Testing VM allocation algorithms in a simulated cloud environment.
+
+3. What is Fog Computing?
+Fog computing is an extension of cloud computing where processing happens near the source of data instead of sending everything to the cloud.
+Example: Smart traffic lights analyzing vehicle data locally.
+
+4. What are the 3 types of Services (IaaS, PaaS, SaaS)?
+IaaS – Infrastructure as a Service (e.g., AWS EC2 virtual machines).
+PaaS – Platform as a Service (e.g., Google App Engine for app development).
+SaaS – Software as a Service (e.g., Gmail).
+
+5. What are the 3 types of Cloud (Public, Private, Hybrid)?
+Public Cloud – shared infrastructure (AWS).
+Private Cloud – owned by organization (bank).
+Hybrid Cloud – combination of both.
+
+6. What are the main characteristics of Cloud?
+On‑demand access, scalability, pay-as-you-go, elasticity, measured usage.
+
+7. What is Elasticity in Cloud Computing?
+Ability to automatically scale resources up/down.
+Example: E-commerce site auto-scales during festival sale.
+
+8. What is Simulation?
+Creating a virtual model to test something without doing it in real life.
+Example: Flight simulators used for pilot training.
+
+9. What is Hadoop?
+Hadoop is an open-source framework used to store and process Big Data in a distributed manner.
+Example: Facebook uses Hadoop to analyze user data.
+
+10. What is SQL?
+SQL (Structured Query Language) is used to manage and query relational databases.
+Example: SELECT * FROM students;
+
+11. What is Virtualization?
+Virtualization is creating multiple virtual machines on a single physical machine.
+
+12. What is Virtual Machine (VM) and how to access it?
+A VM is a software-based computer running inside a real computer. Access through Hypervisor like VMware, VirtualBox.
+
+13. Why use Virtual Machines (VMs)?
+Better resource utilization, isolation, multiple OS on same machine.
+
+14. What is Structured, Unstructured, and Semi-structured data?
+Structured – Tables (SQL databases).
+Unstructured – Images, videos, audio.
+Semi-structured – JSON, XML.
+
+15. What is Big Data?
+Huge data that cannot be processed by traditional systems.
+Example: Social media data.
+
+16. What are the disadvantages of Cloud Computing?
+Internet dependency, security risks, less control.
+
+17. Drive storage offered by Cloud Providers:
+Google Drive – 15GB free
+OneDrive – 5GB free
+Dropbox – 2GB free
+
+18. Difference: Cloud Computing vs Edge Computing
+Cloud – processing happens in remote data centers.
+Edge – processing happens near data source.
+
+19. How does Cloud support IoT?
+Stores IoT device data, remote monitoring.
+Example: Smart home devices storing data to cloud.
+
+20. What is Serverless Computing?
+Allows developers to run code without managing servers.
+Example: AWS Lambda.
+
+21. Benefits of Cloud-based databases
+Scalable, automatic backup, accessible anywhere.
+
+22. Cloud impact on data security
+Providers use encryption, firewalls, IAM access control.
+
+23. Role of APIs in Cloud
+APIs help integrate and communicate between software and cloud services.
+
+24. What is Containerization?
+Containerization packages applications with all dependencies into containers.
+Example: Docker.
+
+25. Cloud for AI/ML
+Cloud provides GPUs/TPUs for training ML models.
+
+26. What is Google App Engine?
+A PaaS service to deploy applications without managing infrastructure.
+
+27. What is TryStack?
+TryStack is a free OpenStack cloud platform to practice cloud on virtual VMs.
+
+28. How Hadoop is used in Cloud Computing?
+Cloud platforms run Hadoop clusters to process Big Data quickly.
+
+END OF NOTES
